@@ -1,0 +1,11 @@
+function GenPerfPlots_TB100(AOGResultIdentifier, datasetDir, resultRootDir)
+% resultIdentifier： the "note" in tracker_config.xml, usually time stamp
+
+% compute performance for other trackers in TB-100
+resultDir_Others = GenPerfMat_OtherTrackers_TB100(datasetDir, resultRootDir);
+
+% compute performance for AOGTracker in TB-100
+resultDir_AOGTracker = GenPerfMat_AOGTracker_TB100(AOGResultIdentifier, datasetDir, resultRootDir);
+
+% generate plots
+Performance_Comp_TB100(resultDir_AOGTracker, resultDir_Others, resultRootDir);

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- AOGTracker configuration file -->
+<!--    Note: make sure there are no space after all ">", otherwise opencv might have problems parsing the xml -->
+<opencv_storage>
+    <!-- =========================== Data Source =========================== -->
+    <!-- Each video sequence is a sub-folder in RootDir -->
+    <RootDir>"/media/tfwu/Data/TB100/"</RootDir>
+    <!-- Using , as separator between different sequences, e.g., Coke, Woman -->
+    <!-- If empty (i.e., ""), all subfolders will be used -->
+    <SequenceNames>""</SequenceNames>
+    <!-- then all frames can be accessed at: RootDir/SequenceName/ImageFolder/*ImgageExtName -->
+    <!--   ImageFolder can be empty (i.e., "") -->
+    <ImageFolder>"img"</ImageFolder>
+    <!-- the format of all image file base names should be zero-padded numbers with same width, e.g., 00001, 00002 -->
+    <ImageExtName>".jpg"</ImageExtName>     
+    <!-- GroundTruth file name: e.g., groundtruth_rect and groundtruth used by TB-100 and VOT respectively -->
+    <GroundTruthFileBaseName>"groundtruth_rect"</GroundTruthFileBaseName>        
+    <!-- =========================== Testing =========================== -->    
+    <!-- mode, 0: regular (=OPE), 1: TB-50/100 (OPE, TRE, SRE)-->
+    <runMode>0</runMode>        
+    <!-- omit frame idx in TRE provided by TB-100 authors -->
+    <omitFrameIdxSpecDir>"/media/tfwu/Data/TB100-occ/"</omitFrameIdxSpecDir>           
+    <!-- 1: use object template only in tracking, 0: use AOG -->
+    <useRootOnly>0</useRootOnly>
+    <!-- 1: without temporal DP -->
+    <runBaseLineTracker>0</runBaseLineTracker>    
+    <!-- name tag for result cache folder, AOGTracker result identifier -->
+    <note>"test"</note>
+    <!-- 1: Show frame based results -->
+    <showResult>1</showResult>
+    <!-- 1: Show video demo -->
+    <showDemo>0</showDemo>
+    <!-- 1: clear previous results w.r.t. note -->
+    <clearPreviousResults>1</clearPreviousResults>
+</opencv_storage>

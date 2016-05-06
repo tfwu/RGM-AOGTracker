@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- AOGTracker configuration file -->
+<!--    Note: make sure there are no space after all ">", otherwise opencv will can not parse the xml -->
+<opencv_storage>     
+    <!-- =========================== Feature =========================== -->
+    <FeatType>2</FeatType>
+</opencv_storage>
