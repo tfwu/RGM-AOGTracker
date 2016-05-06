@@ -4,10 +4,13 @@
 Tianfu Wu , Yang Lu and Song-Chun Zhu, Online Object Tracking, Learning and Parsing with And-Or Graphs, arXiv 1509.08067, TPAMI (under revision).
 
 The code is written by Matt Tianfu Wu (tfwu@stat.ucla.edu). Please feel free to report issues to me. 
+
 Copyright (c) 2016, Matt Tianfu Wu
+
 All rights reserved.
 
 If you find the code is useful in your projects, please consider to cite the paper
+
 @article{AOGTracker,
   author    = {Tianfu Wu and
                Yang Lu and
