@@ -3,24 +3,29 @@
 ## Reproducing all experimental results in the paper
 Tianfu Wu , Yang Lu and Song-Chun Zhu, Online Object Tracking, Learning and Parsing with And-Or Graphs, arXiv 1509.08067, TPAMI (under revision).
 
+See a demo here: https://www.youtube.com/watch?v=1Ian4qzkNLA
+
 The code is written by Matt Tianfu Wu (tfwu@stat.ucla.edu). Please feel free to report issues to me. 
+
 Copyright (c) 2016, Matt Tianfu Wu
+
 All rights reserved.
 
 If you find the code is useful in your projects, please consider to cite the paper
-@article{AOGTracker,
-  author    = {Tianfu Wu and
-               Yang Lu and
-               Song{-}Chun Zhu},
-  title     = {Online Object Tracking, Learning and Parsing with And-Or Graphs},
-  journal   = {CoRR},
-  volume    = {abs/1509.08067},
-  year      = {2015},
-  url       = {http://arxiv.org/abs/1509.08067},
-  timestamp = {Thu, 01 Oct 2015 14:28:48 +0200},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/WuLZ15b},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
+
+	@article{AOGTracker,
+	  author    = {Tianfu Wu and
+	               Yang Lu and
+	               Song{-}Chun Zhu},
+	  title     = {Online Object Tracking, Learning and Parsing with And-Or Graphs},
+	  journal   = {CoRR},
+	  volume    = {abs/1509.08067},
+	  year      = {2015},
+	  url       = {http://arxiv.org/abs/1509.08067},
+	  timestamp = {Thu, 01 Oct 2015 14:28:48 +0200},
+	  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/WuLZ15b},
+	  bibsource = {dblp computer science bibliography, http://dblp.org}
+	}
 
 
 ## 0. System requirements:
