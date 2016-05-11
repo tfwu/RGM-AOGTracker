@@ -1,17 +1,17 @@
 # AOGTracker 
 
 ## Reproducing all experimental results in the paper
-Tianfu Wu , Yang Lu and Song-Chun Zhu, Online Object Tracking, Learning and Parsing with And-Or Graphs, arXiv 1509.08067, TPAMI (under revision).
+Tianfu Wu , Yang Lu and Song-Chun Zhu, Online Object Tracking, Learning and Parsing with And-Or Graphs, arXiv 1509.08067, TPAMI (under revision).  http://arxiv.org/abs/1509.08067
 
 See a demo here: https://www.youtube.com/watch?v=1Ian4qzkNLA
 
-The code is written by Matt Tianfu Wu (tfwu@stat.ucla.edu). Please feel free to report issues to me. 
+The code is written by Matt Tianfu Wu (tfwu@stat.ucla.edu). Please feel free to report issues to him. 
 
 Copyright (c) 2016, Matt Tianfu Wu
 
 All rights reserved.
 
-If you find the code is useful in your projects, please consider to cite the paper
+If you find the code is useful in your projects, please consider to cite the paper,
 
 	@article{AOGTracker,
 	  author    = {Tianfu Wu and
@@ -35,6 +35,8 @@ We tested our tracker on Ubuntu 14.04 LTS. Other OS will be supported later on.
 
 ### Third-party libraries
 sudo apt-get install build-essential cmake libboost1.55-all-dev libopencv-dev libeigen3-dev  libfftw3-dev graphviz mpich2
+
+Note: please use libboost1.55-all-dev for the best practice. 
 
 ###  The TRAX library for VOT
 It is needed for integrating AOGTracker4VOT into vot-toolkit. Please follow the instrunctions at https://github.com/votchallenge/trax.git.
@@ -61,7 +63,7 @@ After compiling, the release/debug version executables (entry or entryd, AOGTrac
 
 ## 2. Preparing the Datasets
 TB100/50 is available at http://cvlab.hanyang.ac.kr/tracker_benchmark/. Please download all the data to PATH_TO_TB100 (e.g. /home/your_user_name/Data/TB100/)
-Note that: TB100-occ is provided which specifies omit frame idx in TRE (originally provided by TB-100 authors)
+Note that: TB100-occ is provided which specifies omitting frame index in TRE (provided by TB-100 authors)
 
 VOT datasets are vailable at http://www.votchallenge.net/. vot-toolkit will download the data automatically.
 
@@ -101,5 +103,4 @@ c) Modify the tracker_AOGTracker.m, e.g.,
 
 ## 6. Acknowledgement
 In general, the code is developed with the help from voc-release 5 by Dr. Ross Girshick and Prof. Felzenszwalb. 
-The code for computing HOG features, FFT convolution and LBFGS is adapted from FFLD by Dr. Charles Dubout <http://charles.dubout.ch/en/coding.html>. 
-We are grateful to them for make their codes publicly available.
+The codes for computing HOG features, FFT convolution and LBFGS are adapted from FFLD by Dr. Charles Dubout <http://charles.dubout.ch/en/coding.html>. We are grateful to them for making their codes publicly available.
